@@ -1,0 +1,14 @@
+D:\SE\Back-end\CSharp\Projects\CSharpBeginner\bin\Debug\net8.0\CSharpBeginner.exe
+D:\SE\Back-end\CSharp\Projects\CSharpBeginner\bin\Debug\net8.0\CSharpBeginner.deps.json
+D:\SE\Back-end\CSharp\Projects\CSharpBeginner\bin\Debug\net8.0\CSharpBeginner.runtimeconfig.json
+D:\SE\Back-end\CSharp\Projects\CSharpBeginner\bin\Debug\net8.0\CSharpBeginner.dll
+D:\SE\Back-end\CSharp\Projects\CSharpBeginner\bin\Debug\net8.0\CSharpBeginner.pdb
+D:\SE\Back-end\CSharp\Projects\CSharpBeginner\obj\Debug\net8.0\CSharpBeginner.GeneratedMSBuildEditorConfig.editorconfig
+D:\SE\Back-end\CSharp\Projects\CSharpBeginner\obj\Debug\net8.0\CSharpBeginner.AssemblyInfoInputs.cache
+D:\SE\Back-end\CSharp\Projects\CSharpBeginner\obj\Debug\net8.0\CSharpBeginner.AssemblyInfo.cs
+D:\SE\Back-end\CSharp\Projects\CSharpBeginner\obj\Debug\net8.0\CSharpBeginner.csproj.CoreCompileInputs.cache
+D:\SE\Back-end\CSharp\Projects\CSharpBeginner\obj\Debug\net8.0\CSharpBeginner.dll
+D:\SE\Back-end\CSharp\Projects\CSharpBeginner\obj\Debug\net8.0\refint\CSharpBeginner.dll
+D:\SE\Back-end\CSharp\Projects\CSharpBeginner\obj\Debug\net8.0\CSharpBeginner.pdb
+D:\SE\Back-end\CSharp\Projects\CSharpBeginner\obj\Debug\net8.0\CSharpBeginner.genruntimeconfig.cache
+D:\SE\Back-end\CSharp\Projects\CSharpBeginner\obj\Debug\net8.0\ref\CSharpBeginner.dll
