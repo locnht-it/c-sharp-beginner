@@ -12,3 +12,4 @@ D:\SE\Back-end\CSharp\Projects\CSharpBeginner\obj\Debug\net8.0\refint\CSharpBegi
 D:\SE\Back-end\CSharp\Projects\CSharpBeginner\obj\Debug\net8.0\CSharpBeginner.pdb
 D:\SE\Back-end\CSharp\Projects\CSharpBeginner\obj\Debug\net8.0\CSharpBeginner.genruntimeconfig.cache
 D:\SE\Back-end\CSharp\Projects\CSharpBeginner\obj\Debug\net8.0\ref\CSharpBeginner.dll
+D:\SE\Back-end\CSharp\Projects\CSharpBeginner\obj\Debug\net8.0\CSharpBeginner.sourcelink.json
