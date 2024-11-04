@@ -142,3 +142,23 @@ if (aquariumFish is string)
 {
     Console.WriteLine("Aquarium fish is a string");
 }
+
+// #8. Enum
+Console.WriteLine("#############");
+Console.WriteLine("#8. Enum");
+
+Console.WriteLine(Warning.CodeYellow);
+Console.WriteLine((int)Warning.CodeYellow);
+
+var status = Warning.CodeYellow;
+if(status == Warning.CodeYellow)
+{
+    Console.WriteLine("CODE YELLOW");
+}
+
+enum Warning
+{
+    CodeRed, // 0
+    CodeBlue, // 1
+    CodeYellow // 2
+}
