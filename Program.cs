@@ -1,5 +1,6 @@
 ﻿using System.Net.NetworkInformation;
 using System.Text;
+using CSharpBeginner;
 
 Console.WriteLine("Hello, World!");
 
@@ -201,10 +202,45 @@ Console.WriteLine("#10. While");
 Ping p1 = new Ping();
 PingReply PR = p1.Send("8.8.8.8");
 
-while(PR.Status.ToString() == "Success")
-{
-    Console.WriteLine(PR.Status.ToString() + "!");
-    PR = p1.Send("8.8.8.8");
-    Console.WriteLine("Waiting ten seconds for next request");
-    Thread.Sleep(10000);
-}
+// while(PR.Status.ToString() == "Success")
+// {
+//     Console.WriteLine(PR.Status.ToString() + "!");
+//     PR = p1.Send("8.8.8.8");
+//     Console.WriteLine("Waiting ten seconds for next request");
+//     Thread.Sleep(10000);
+// }
+
+// #11. Class
+Console.WriteLine("#############");
+Console.WriteLine("#11. Class");
+
+// CRUD
+
+Rat wolfRat = new Rat();
+Rat fancyRat = new Rat();
+
+wolfRat.Name = "Wolf Rat";
+wolfRat.Number = 1000;
+wolfRat.IsRadioactive = false;
+
+fancyRat.Name = "Fancy Rat";
+fancyRat.Number = 500;
+fancyRat.IsRadioactive = false;
+
+// Read
+Console.WriteLine(wolfRat.Name);
+Console.WriteLine(fancyRat.Name);
+
+// Update
+wolfRat.Name = "WOLF RAT";
+fancyRat.Name = "FANCY RAT";
+
+Console.WriteLine(wolfRat.Name);
+Console.WriteLine(fancyRat.Name);
+
+// Delete
+wolfRat.Name = "";
+fancyRat.Name = "";
+
+Console.WriteLine("Check wolfRat Name after delete: " + wolfRat.Name);
+Console.WriteLine("Check fancyRat Name after delete: " + fancyRat.Name);
