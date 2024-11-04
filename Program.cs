@@ -147,18 +147,46 @@ if (aquariumFish is string)
 Console.WriteLine("#############");
 Console.WriteLine("#8. Enum");
 
-Console.WriteLine(Warning.CodeYellow);
-Console.WriteLine((int)Warning.CodeYellow);
+// Console.WriteLine(Warning.CodeYellow);
+// Console.WriteLine((int)Warning.CodeYellow);
 
-var status = Warning.CodeYellow;
-if(status == Warning.CodeYellow)
+// var status = Warning.CodeYellow;
+// if(status == Warning.CodeYellow)
+// {
+//     Console.WriteLine("CODE YELLOW");
+// }
+
+// enum Warning
+// {
+//     CodeRed, // 0
+//     CodeBlue, // 1
+//     CodeYellow // 2
+// }
+
+// #9. Switch Statement & Expression
+Console.WriteLine("#############");
+Console.WriteLine("#9. Switch Statement & Expression");
+
+var preHistoricFish = "Cockerelitte";
+
+switch(preHistoricFish)
 {
-    Console.WriteLine("CODE YELLOW");
+    case "Heliobatis":
+        Console.WriteLine("Heliobatis");
+        break;
+    case "Cockerelitte":
+        Console.WriteLine("Cockerelitte");
+        break;
+    default:
+        Console.WriteLine("Nothing matches!");
+        break;
 }
 
-enum Warning
+var result = preHistoricFish switch
 {
-    CodeRed, // 0
-    CodeBlue, // 1
-    CodeYellow // 2
-}
+    "Heliobatis" => "Heliobatis",
+    "Cockerelitte" => "Cockerelitte",
+    _ => "No match!"
+};
+
+Console.WriteLine("This is a " + result);
