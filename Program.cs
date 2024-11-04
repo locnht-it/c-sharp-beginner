@@ -75,3 +75,31 @@ foreach(var cat in newFavoriteCats)
 {
     Console.WriteLine(cat);
 }
+
+// #6. For & ForEach
+Console.WriteLine("#############");
+Console.WriteLine("#6. For & ForEach");
+
+// Counter
+for(var i = 1; i <= 10; i++)
+{
+    Console.WriteLine(i);
+}
+
+string[] favoriteFruits = ["Banana", "Apple", "Watermelon"];
+
+for (var i = 0; i < favoriteFruits.Length; i++)
+{
+    Console.WriteLine(favoriteFruits[i]);
+}
+
+foreach(var fruit in favoriteFruits)
+{
+    Console.WriteLine(fruit);
+}
+
+favoriteFruits.ToList().ForEach((i) => {
+    Console.WriteLine("ForEach: " + i);
+});
+
+Array.ForEach(favoriteFruits, e => Console.WriteLine("Array.ForEach: " + e));
