@@ -244,3 +244,16 @@ fancyRat.Name = "";
 
 Console.WriteLine("Check wolfRat Name after delete: " + wolfRat.Name);
 Console.WriteLine("Check fancyRat Name after delete: " + fancyRat.Name);
+
+// #12. Methods
+Console.WriteLine("#############");
+Console.WriteLine("#12. Methods");
+
+RealEstate elmStreet = new()
+{
+    Address = "Elm Street",
+    SquareFootage = 1300,
+    Price = 300000
+};
+
+Console.WriteLine(elmStreet.CalculatePricePerSquareFoot());
