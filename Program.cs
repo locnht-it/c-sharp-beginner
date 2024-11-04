@@ -103,3 +103,42 @@ favoriteFruits.ToList().ForEach((i) => {
 });
 
 Array.ForEach(favoriteFruits, e => Console.WriteLine("Array.ForEach: " + e));
+
+// #7. If/Else Statements
+Console.WriteLine("#############");
+Console.WriteLine("#7. If/Else Statements");
+
+if(false)
+{
+    Console.WriteLine("This code will ALWAYS run");
+}
+
+var aquariumStoreInventory = "puffer fish";
+
+if((aquariumStoreInventory == "puffer fish") || (aquariumStoreInventory == "clown fish"))
+{
+    Console.WriteLine("I will buy puffer fish or clown fish!");
+}
+else
+{
+    Console.WriteLine("I will not buy anything!");
+}
+
+// <>
+var fishTankPrice = 999;
+
+if(fishTankPrice <= 1000)
+{
+    Console.WriteLine("Buy tank");
+}
+else
+{
+    Console.WriteLine("Don't buy");
+}
+
+string aquariumFish = "puffer fish";
+
+if (aquariumFish is string)
+{
+    Console.WriteLine("Aquarium fish is a string");
+}
