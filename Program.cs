@@ -50,3 +50,28 @@ newDog.Append("Border Collie");
 Console.WriteLine(newDog);
 newDog.Remove(0, 7);
 Console.WriteLine(newDog);
+
+// #5. Arrays
+Console.WriteLine("#############");
+Console.WriteLine("#5. Arrays");
+
+// Create
+string[] favoriteCats = ["fancy cat", "brown cat", "radioactive cat", "wolf cat"];
+
+// Read
+//Console.WriteLine(favoriteCats); // wrong, favoriteCats is a pointer
+// foreach(var cat in favoriteCats)
+// {
+//     Console.WriteLine(cat);
+// }
+
+// Update
+//favoriteCats[0] = "Fancy Cat";
+// LINQ - "update array linq"
+
+var newFavoriteCats = favoriteCats.Where((e) => e.StartsWith("b"));
+
+foreach(var cat in newFavoriteCats)
+{
+    Console.WriteLine(cat);
+}
