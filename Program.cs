@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using System.Net.NetworkInformation;
+using System.Text;
 
 Console.WriteLine("Hello, World!");
 
@@ -190,3 +191,20 @@ var result = preHistoricFish switch
 };
 
 Console.WriteLine("This is a " + result);
+
+// #10. While
+Console.WriteLine("#############");
+Console.WriteLine("#10. While");
+
+// Pinger
+
+Ping p1 = new Ping();
+PingReply PR = p1.Send("8.8.8.8");
+
+while(PR.Status.ToString() == "Success")
+{
+    Console.WriteLine(PR.Status.ToString() + "!");
+    PR = p1.Send("8.8.8.8");
+    Console.WriteLine("Waiting ten seconds for next request");
+    Thread.Sleep(10000);
+}
