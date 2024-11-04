@@ -283,3 +283,20 @@ Console.WriteLine(valuesWithName.Third);
 Console.WriteLine(a);
 Console.WriteLine(b);
 Console.WriteLine(c);
+
+// #14. Null Reference Exception/Error
+Console.WriteLine("#############");
+Console.WriteLine("#14. Null Reference Exception/Error");
+
+int? value = null;
+
+string? value2 = null;
+
+if(value2 is not null)
+{
+    Console.WriteLine(value2.Length);
+}
+
+Console.WriteLine(value2 ?? "No value!"); // ?? null-coalescing
+
+Console.WriteLine(value2 is not null ? "Has value!" : "No value");
