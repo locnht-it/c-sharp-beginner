@@ -308,3 +308,11 @@ Console.WriteLine("#15. Constructor");
 Dog oKiKi = new("O Ki Ki");
 oKiKi.Name = "Fish";
 Console.WriteLine(oKiKi.Name);
+
+// #16. Static
+Console.WriteLine("#############");
+Console.WriteLine("#16. Static");
+
+TimeUtility.PrintTime();
+TimeUtility.PrintTime();
+TimeUtility.PrintTime();
