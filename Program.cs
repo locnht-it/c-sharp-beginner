@@ -300,3 +300,11 @@ if(value2 is not null)
 Console.WriteLine(value2 ?? "No value!"); // ?? null-coalescing
 
 Console.WriteLine(value2 is not null ? "Has value!" : "No value");
+
+// #15. Constructor
+Console.WriteLine("#############");
+Console.WriteLine("#15. Constructor");
+
+Dog oKiKi = new("O Ki Ki");
+oKiKi.Name = "Fish";
+Console.WriteLine(oKiKi.Name);
