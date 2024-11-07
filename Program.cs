@@ -353,3 +353,28 @@ foreach(var num in numNums)
 {
     Console.WriteLine(num);
 }
+
+// #18. Records
+Console.WriteLine("#############");
+Console.WriteLine("#18. Records");
+
+Person person1 = new("Loc", "Ngo", new string[1] {"123-456"});
+Person person2 = new("Loc", "Ngo", new string[1] {"123-456"});
+Province province1 = new("Phu Yen", 78);
+Province province2 = new("Phu Yen", 78);
+// Shallow Immutability
+// person1.LastName = "Smith";  // error
+// person1.PhoneNumbers[0] = "999-999";
+
+// Equality
+// Value - 1. Check the type - 2. Check the contents
+Console.WriteLine(province1 == province2); // True
+// Referential - 1. Check the type - 2. By memory (hex code)
+Console.WriteLine(person1 == person2); // False
+
+// Non-destructive Mutation (Copy)
+Person person3 = person2 with {LastName = "Tan"};
+Console.WriteLine(person3.ToString());
+
+public record Person(string FirstName, string LastName, string[] PhoneNumbers);
+public record Province(string name, int number);
