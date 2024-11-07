@@ -316,3 +316,40 @@ Console.WriteLine("#16. Static");
 TimeUtility.PrintTime();
 TimeUtility.PrintTime();
 TimeUtility.PrintTime();
+
+// #17. List
+Console.WriteLine("#############");
+Console.WriteLine("#17. List");
+
+// Create
+List<int> numNums = [1, 2, 3, 4, 5];
+
+// Read
+foreach(var num in numNums)
+{
+    Console.WriteLine(num);
+}
+
+// Update
+// This is the fastest
+ numNums.Add(0);
+// ///insert
+ numNums.Insert(0, 0); // void List<int>.Insert(int index, int item)
+foreach(var num in numNums)
+{
+    Console.WriteLine(num);
+}
+
+// Delete
+// var newNum = numNums.Where((i) => i != 2);
+// foreach(var num in newNum)
+// {
+//     Console.WriteLine(num);
+// }
+
+numNums.Remove(1); // bool List<int>.Remove(int item)
+numNums.RemoveAt(1); // void List<int>.RemoveAt(int index)
+foreach(var num in numNums)
+{
+    Console.WriteLine(num);
+}
