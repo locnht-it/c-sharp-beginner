@@ -358,23 +358,51 @@ foreach(var num in numNums)
 Console.WriteLine("#############");
 Console.WriteLine("#18. Records");
 
-Person person1 = new("Loc", "Ngo", new string[1] {"123-456"});
-Person person2 = new("Loc", "Ngo", new string[1] {"123-456"});
-Province province1 = new("Phu Yen", 78);
-Province province2 = new("Phu Yen", 78);
+// Person person1 = new("Loc", "Ngo", new string[1] {"123-456"});
+// Person person2 = new("Loc", "Ngo", new string[1] {"123-456"});
+// Province province1 = new("Phu Yen", 78);
+// Province province2 = new("Phu Yen", 78);
 // Shallow Immutability
 // person1.LastName = "Smith";  // error
 // person1.PhoneNumbers[0] = "999-999";
 
 // Equality
 // Value - 1. Check the type - 2. Check the contents
-Console.WriteLine(province1 == province2); // True
+// Console.WriteLine(province1 == province2); // True
 // Referential - 1. Check the type - 2. By memory (hex code)
-Console.WriteLine(person1 == person2); // False
+// Console.WriteLine(person1 == person2); // False
 
 // Non-destructive Mutation (Copy)
-Person person3 = person2 with {LastName = "Tan"};
-Console.WriteLine(person3.ToString());
+// Person person3 = person2 with {LastName = "Tan"};
+// Console.WriteLine(person3.ToString());
 
-public record Person(string FirstName, string LastName, string[] PhoneNumbers);
-public record Province(string name, int number);
+// public record Person(string FirstName, string LastName, string[] PhoneNumbers);
+// public record Province(string name, int number);
+
+// #19. Delegates, Function, & Action
+Console.WriteLine("#############");
+Console.WriteLine("#19. Delegates, Function, & Action");
+
+Action loggerAction = () =>
+{
+    Console.WriteLine("This is simple");
+};
+
+Func<int ,int> loggerFunc = (int x) =>
+{
+    return x + 2;
+};
+
+var list = Enumerable.Range(1, 10).Select(i => i * 3).ToList();
+foreach(var i in list)
+{
+    Console.WriteLine(i);
+}
+var callCall = (Action func) =>
+{
+    func();
+};
+
+callCall(loggerAction);
+
+public delegate int SuperCustom(int x);
