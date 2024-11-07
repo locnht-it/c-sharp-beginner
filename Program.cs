@@ -405,4 +405,8 @@ var callCall = (Action func) =>
 
 callCall(loggerAction);
 
-public delegate int SuperCustom(int x);
+//public delegate int SuperCustom(int x);
+
+// #20. Dictionary
+Console.WriteLine("#############");
+Console.WriteLine("#20. Dictionary");
