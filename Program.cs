@@ -410,3 +410,7 @@ callCall(loggerAction);
 // #20. Dictionary
 Console.WriteLine("#############");
 Console.WriteLine("#20. Dictionary");
+
+// #21. HashSet
+Console.WriteLine("#############");
+Console.WriteLine("#21. HashSet");
